@@ -12,6 +12,9 @@ import Slider from './Components/Slider'
 import Support from './Components/Support'
 import Mark from './Components/Mark'
 import Footer from './Components/Footer'
+import InfiniteSlider from './Components/InfiniteSlider'
+
+
 
 
 function App() {
@@ -20,7 +23,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div className='pt-[40px]'>
+      <div className="pt-[40px]">
         <Hero />
       </div>
 
@@ -30,7 +33,7 @@ function App() {
       <div className="pt-[150px]">
         <Cards />
       </div>
-      <div className="pt-[150px]">
+      <div className="pt-[100px]">
         <Slider />
       </div>
       <div className="pt-[150px]">
@@ -38,6 +41,10 @@ function App() {
       </div>
       <div className="pt-[150px]">
         <Mark />
+      </div>
+      <div className="pt-[150px]">
+        <InfiniteSlider />
+      
       </div>
       <div className="pt-[150px]">
         <Footer />

@@ -5,8 +5,8 @@ import { Insurance, Company, Resources } from "./CustomSelect";
 const Navbar = () => {
   return (
     <div>
-      <div className="container mx-auto font-montserrat text-[#021A56] font-bold">
-        <div className="flex justify-between items-center ">
+      <div className="container mx-auto font-montserrat text-[#021A56] font-bold ">
+        <div className="flex justify-between items-center xs:flex-col xs: ">
           <div>
             <img src="lOGO 1.svg" alt="logo" />
           </div>

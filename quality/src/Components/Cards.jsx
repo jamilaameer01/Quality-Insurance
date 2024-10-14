@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Cards = () => {
+  
   return (
     <div className="container mx-auto">
       <h2 className="text-[40px] text-[#021A56] pb-16 font-bold">
@@ -57,6 +58,7 @@ const Cards = () => {
           <span>Home</span>
         </div>
       </div>
+     
     </div>
   );
 }

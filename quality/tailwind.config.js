@@ -13,6 +13,26 @@ export default {
       boxShadow: {
         "custom-6": "0px -5.84px 66.73px 0px #00000012",
       },
+      screens: {
+        // new
+        xtab: { min: "991px", max: "1199px" },
+        tab: { min: "768px", max: "990px" },
+        mob: { min: "481px", max: "768px" },
+        xs: { min: "320px", max: "480px" },
+      },
+      animation: {
+        ["infinite-slider"]: "infiniteSlider 20s linear infinite",
+
+      },
+      keyframes: {
+        infiniteSlider: {
+          "0%": { transform: "translateX(0)" },
+          "100%": {
+            transform: "translateX(calc(-250px * 15))",
+          },
+        },
+      },
+      
     },
   },
   plugins: [],

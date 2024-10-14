@@ -79,11 +79,11 @@ const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const Previous = () => {
-    setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1)); // Move to the last slide if at the first
+    setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1)); 
   };
 
   const Next = () => {
-    setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1)); // Move to the first slide if at the last
+    setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1)); 
   };
 
   return (
@@ -104,15 +104,15 @@ const Slider = () => {
         <div
           className="flex transition-transform duration-300 ease-in-out"
           style={{
-            transform: `translateX(-${currentSlide * (100 / 4)}%)`, // Move by 1 slide, showing 4 at a time
-            width: `${(slides.length / 4) * 100}%`, // Adjust the width to fit all slides
+            transform: `translateX(-${currentSlide * (100 / 4)}%)`, 
+            width: `${(slides.length / 4) * 100}%`, 
           }}
         >
           {/* Render the slides */}
           {slides.map((slide) => (
             <div
               key={slide.id}
-              className="flex-shrink-0 p-4" // Adjust each slide width to fit 4 slides in view
+              className="flex-shrink-0 p-4" 
             >
               <div className=" p-6  font-montserrat  flex flex-col w-[340px] items-start">
                 <img
@@ -143,7 +143,7 @@ const Slider = () => {
         </div>
       </div>
 
-      {/* Navigation Buttons */}
+
       <button
         onClick={Previous}
         className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md hover:bg-gray-100"
@@ -157,15 +157,15 @@ const Slider = () => {
         <MdOutlineArrowForwardIos />
       </button>
 
-      {/* Dots Navigation */}
+    
       <div className="flex justify-center mt-4 space-x-2">
-        {Array.from({ length: Math.ceil(slides.length / 4) }).map(
+        {Array.from({ length: Math.ceil(slides.length / 1) }).map(
           (_, index) => (
             <div
               key={index}
-              onClick={() => setCurrentSlide(index * 4)}
+              onClick={() => setCurrentSlide(index * 1)}
               className={`w-3 h-3 rounded-full cursor-pointer ${
-                currentSlide >= index * 4 && currentSlide < (index + 1) * 4
+                currentSlide >= index * 1 && currentSlide < (index + 1) * 1
                   ? "bg-blue-500"
                   : "bg-gray-300"
               }`}
